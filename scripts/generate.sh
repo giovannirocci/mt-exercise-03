@@ -14,8 +14,8 @@ num_threads=4
 device=""
 
 (cd $tools/pytorch-examples/word_language_model &&
-    CUDA_VISIBLE_DEVICES=$device OMP_NUM_THREADS=$num_threads python generate.py \
-        --data $data/grimm \
+    CUDA_VISIBLE_DEVICES=$device OMP_NUM_THREADS=$num_threads python3 generate.py \
+        --data $data/frankenstein \
         --words 100 \
         --checkpoint $models/model.pt \
         --outf $samples/sample
