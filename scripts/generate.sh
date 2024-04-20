@@ -17,6 +17,6 @@ device=""
     CUDA_VISIBLE_DEVICES=$device OMP_NUM_THREADS=$num_threads python3 generate.py \
         --data $data/frankenstein \
         --words 100 \
-        --checkpoint $models/model.pt \
-        --outf $samples/sample
+        --checkpoint $models/model_0.9_dropout.pt \
+        --outf $samples/sample_0.9_dropout
 )
